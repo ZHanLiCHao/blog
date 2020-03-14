@@ -1,4 +1,4 @@
-package top.taidu.blog;
+package top.taidu;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

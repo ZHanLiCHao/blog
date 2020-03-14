@@ -1,4 +1,4 @@
-package top.taidu.blog;
+package top.taidu;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
