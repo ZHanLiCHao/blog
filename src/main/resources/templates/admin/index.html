@@ -21,10 +21,10 @@
     <div>
         <div class="ui container">
             <div class="ui success large message">
-                <h2>Hi,</h2>
-                <p>ZHan,欢迎登录</p>
+                <h2>Hi,<span th:text="${session.user.nickName}">ZHan</span>,欢迎登录</h2>
+
             </div>
-            <img src="https://picsum.photos/id/1027/800/600" alt="" class="ui rounded bordered fluid image">
+            <img src="https://picsum.photos/id/1027/800/600" th:src="@{${session.user.avator}}"alt="" class="ui rounded bordered fluid image">
 
         </div>
     </div>

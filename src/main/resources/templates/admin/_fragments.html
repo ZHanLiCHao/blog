@@ -10,6 +10,8 @@
     <link href="../../static/css/animate.css" rel="stylesheet" th:href="@{/css/animate.css}">
     <link rel="stylesheet" href="../../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}"/>
+
 </head>
 <body>
 <!--导航栏-->
@@ -23,8 +25,8 @@
             <div class="right menu">
                 <div class="ui dropdown item">
                     <div class="text">
-                        <img src="https://picsum.photos/id/1/100/100" alt="" class="ui avatar image">
-                        詹立超
+                        <img src="https://picsum.photos/id/1/100/100" th:src="@{${session.user.avator}}" alt="" class="ui avatar image">
+                        <span th:text="${session.user.nickName}"></span>
                     </div>
                     <i class="dropdown icon"></i>
                     <div class="menu">
