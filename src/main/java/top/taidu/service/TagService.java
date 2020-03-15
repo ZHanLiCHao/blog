@@ -20,6 +20,7 @@ public interface TagService {
     Page<Tag> listTag(Pageable pageable);
 
     List<Tag> listTag();
+    List<Tag> listTagTop(Integer integer);
 
     List<Tag> listTag(String ids);
 
