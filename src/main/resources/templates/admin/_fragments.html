@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../../static/lib/prism/prism.css" th:href="@{/lib/prism/prism.css}">
     <link rel="stylesheet" href="../../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.css" th:href="@{/lib/editormd/css/editormd.css}"/>
-
 </head>
 <body>
 <!--导航栏-->
@@ -21,7 +20,7 @@
             <h2 class="ui teal header item">管理后台</h2>
             <a href="" class="item" th:href="@{/admin/blogs}" th:classappend="${n==1}?'active'"><i class="home icon"></i>博客</a>
             <a href="" class="item" th:href="@{/admin/types}" th:classappend="${n==2}?'active'"><i class="idea icon"></i>分类</a>
-            <a href="" class="item" th:classappend="${n==3}?'active'"><i class="tags icon"></i>标签</a>
+            <a href="" class="item" th:href="@{/admin/tags}" th:classappend="${n==3}?'active'"><i class="tags icon"></i>标签</a>
             <div class="right menu">
                 <div class="ui dropdown item">
                     <div class="text">
@@ -37,7 +36,7 @@
         </div>
     </div>
 </nav>
-<footer th:fragment="footer" class="ui inverted vertical segment">
+<footer th:fragment="footer" class="ui inverted vertical segment z-fixed-bottom">
     <br>
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
@@ -71,7 +70,10 @@
             </div>
         </div>
         <div class="ui inverted section divider"></div>
-        <div class="">Copyright@ 2020 Designed by Zhan</div>
+        <div class="z-text z-opacity-mini">Copyright@ 2020 Designed by Zhan</div>
+        <br>
+        <br>
+        <br>
     </div>
 </footer>
 <th:block th:fragment="script">
