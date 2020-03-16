@@ -1,4 +1,4 @@
-package top.taidu.blog;
+package top.taidu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

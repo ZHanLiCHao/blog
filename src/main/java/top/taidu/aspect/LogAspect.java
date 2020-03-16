@@ -1,4 +1,4 @@
-package top.taidu.blog.aspect;
+package top.taidu.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;

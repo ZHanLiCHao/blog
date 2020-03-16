@@ -1,4 +1,4 @@
-package top.taidu.blog.handler;
+package top.taidu.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
